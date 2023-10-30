@@ -10,7 +10,7 @@ const space_grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Delio",
+  title: "Dealio",
   description:
     "Track products prices effortlessly and save money on your online shopping.",
 };
