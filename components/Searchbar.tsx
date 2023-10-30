@@ -26,6 +26,7 @@ const isValidAmazonProductsUrl = (url: string) => {
 export default function Searchbar() {
   const [searchPrompt, setSearchPrompt] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -44,6 +45,7 @@ export default function Searchbar() {
       setIsLoading(false);
     }
   };
+
   return (
     <form onSubmit={handleSubmit} className="flex flex-wrap gap-4 mt-12">
       <input
