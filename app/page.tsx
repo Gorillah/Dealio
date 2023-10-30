@@ -2,10 +2,12 @@ import HeroCarousel from "@/components/HeroCarousel";
 import ProductsCard from "@/components/ProductsCard";
 import Searchbar from "@/components/Searchbar";
 import { getAllProducts } from "@/lib/actions";
+import { connectToDB } from "@/lib/mongoose";
 import Image from "next/image";
 
 export default async function Home() {
   const allProducts = await getAllProducts();
+  connectToDB();
   return (
     <>
       <section className="px-6 md:px-20 py-24 border-2">
