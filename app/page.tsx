@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default async function Home() {
   const allProducts = await getAllProducts();
-  connectToDB();
+  await connectToDB();
   return (
     <>
       <section className="px-6 md:px-20 py-24 border-2">
